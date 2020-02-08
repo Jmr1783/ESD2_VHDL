@@ -1,0 +1,9 @@
+# ignore all old backup files
+*backup.jou
+*backup.log
+# ignore all .bin files
+*.bin
+# ignore all generated files
+*project/
+*.Xil
+*NA/

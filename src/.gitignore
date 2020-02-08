@@ -1,0 +1,7 @@
+*hw_handoff/
+*ui/
+*ipshare/
+*sim/
+*synth/
+*ip/
+*.bxml
