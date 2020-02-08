@@ -5,7 +5,7 @@
 # ##############################################################################
 
 #set projectName
-set projectName blinkAXI
+set projectName pwm_AXI
 
 # 0: setup project, 1: setup and compile project
 set compileProject 1

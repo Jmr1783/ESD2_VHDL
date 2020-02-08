@@ -2,7 +2,7 @@
   "design": {
     "design_info": {
       "boundary_crc": "0x1FC17682BAC603C1",
-      "device": "xc7z020clg400-3",
+      "device": "xc7z010clg400-1",
       "name": "design_1",
       "synth_flow_mode": "Hierarchical",
       "tool_version": "2019.1.3",
@@ -220,7 +220,7 @@
             "value": "10000000"
           },
           "PCW_CPU_CPU_6X4X_MAX_RANGE": {
-            "value": "867"
+            "value": "667"
           },
           "PCW_CPU_PERIPHERAL_CLKSRC": {
             "value": "ARM PLL"
@@ -1253,16 +1253,16 @@
               }
             },
             "interface_nets": {
-              "auto_pc_to_s00_couplers": {
-                "interface_ports": [
-                  "M_AXI",
-                  "auto_pc/M_AXI"
-                ]
-              },
               "s00_couplers_to_auto_pc": {
                 "interface_ports": [
                   "S_AXI",
                   "auto_pc/S_AXI"
+                ]
+              },
+              "auto_pc_to_s00_couplers": {
+                "interface_ports": [
+                  "M_AXI",
+                  "auto_pc/M_AXI"
                 ]
               }
             },

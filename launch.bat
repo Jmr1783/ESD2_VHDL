@@ -13,23 +13,23 @@ ECHO 4 - Create BIN
 ECHO 5 - EXIT
 ECHO.
 SET /P M=Type 1, 2, 3, 4, or 5 then press ENTER:
-IF %M%==1 GOTO vivado
-IF %M%==2 GOTO sim
-IF %M%==3 GOTO clean
-IF %M%==4 GOTO flash
+IF %M%==1 GOTO VIVADO
+IF %M%==2 GOTO SIM
+IF %M%==3 GOTO CLEAN
+IF %M%==4 GOTO FLASH
 IF %M%==4 GOTO EOF
-:vivado
+:VIVADO
 del vivado.jou
 del vivado.log
 vivado -notrace -mode batch -source project.tcl 
 EXIT
-:sim
+:SIM
 ECHO Not supported currently
 GOTO MENU
-:clean
+:CLEAN
 vivado -notrace -mode batch -source cleanup.tcl
 EXIT
-:flash
+:FLASH
 vivado -notrace -mode batch -source packup.tcl
 EXIT
 
